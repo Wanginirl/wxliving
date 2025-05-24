@@ -4,6 +4,7 @@ import com.baomidou.mybatisplus.extension.service.IService;
 import com.example.common.utils.PageUtils;
 import com.example.wxliving.commodity.entity.CategoryEntity;
 
+import java.util.List;
 import java.util.Map;
 
 /**
@@ -14,6 +15,8 @@ import java.util.Map;
  * @date 2025-05-08 08:35:21
  */
 public interface CategoryService extends IService<CategoryEntity> {
+
+    List<CategoryEntity> listTree();
 
     PageUtils queryPage(Map<String, Object> params);
 }

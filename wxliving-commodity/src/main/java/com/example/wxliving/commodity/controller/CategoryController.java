@@ -44,6 +44,14 @@ public class CategoryController {
         return R.ok().put("page", page);
     }
 
+    /**
+     * 树形列表
+     */
+    @RequestMapping("/list/tree")
+    public R listTree() {
+        // 查询所有分类
+        return R.ok().put("data", categoryService.listTree());
+    }
 
     /**
      * 信息
