@@ -1,6 +1,6 @@
 spring:
   datasource:
-    url: jdbc:mysql://192.168.56.100:3306/wxliving_commodity
+    url: jdbc:mysql://192.168.56.100:3306/wxliving_commodity?useUnicode=true&characterEncoding=UTF-8&useSSL=false
     driver-class-name: com.mysql.cj.jdbc.Driver
     username: root
     password: root
